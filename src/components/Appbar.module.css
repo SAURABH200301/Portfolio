@@ -1,0 +1,29 @@
+.name{
+    padding: 10px;
+    margin: 10px;
+    /* margin-right: 10px; */
+}
+.nav{
+    top:10px;
+    position: sticky;
+}
+.content{
+    height: 12vh;
+}
+.bg{
+    width: 100%;
+    height: 12vh ;
+    position: absolute;
+    backdrop-filter: saturate(180%) blur(10px);
+    background-size: cover;
+}
+/* hover effect in nav bar */
+.hide{
+    display: none;
+}
+@media screen and (max-width: 600px){
+    .name{
+        display: none;
+    }
+  }
+  

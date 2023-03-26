@@ -1,0 +1,11 @@
+.divider{
+    width: 10%;
+    border: 1px solid black;
+}
+.about_content{
+    color: black;
+    font-size: 25px;
+}
+span{
+    font-weight: bolder;
+}
