@@ -81,10 +81,8 @@ function Appbar() {
                         </Card>
                     </div>
                 </div>
-                <div className={` col-md-4 col-sm-4 z-1`}>
-                    <div className={` d-flex justify-content-around  `}>
-                        {/* <h3 className={classes.name}>Saurabh Sharma</h3> */}
-                    </div>
+                <div className={` col-md-4 col-sm-4 z-1 `}>
+                    
                 </div>
             </div>
         </div>

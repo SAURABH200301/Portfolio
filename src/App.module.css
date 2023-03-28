@@ -18,3 +18,23 @@ body{
     height: auto;
     width: auto;
 }
+/* width */
+::-webkit-scrollbar {
+    height: 2px;
+    width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(193, 193, 193);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
