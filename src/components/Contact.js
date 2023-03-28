@@ -31,21 +31,25 @@ const contacts = [
 ]
 function Contact() {
     return (
-        <div id='contact' className='d-flex justify-content-around mt-5'>
+        <div id='contact' className='d-flex justify-content-around mt-5 flex-wrap'>
             <Card width='80%'>
                 <div>
                     <h1 className='text-center'>Contact Me</h1>
-                    <div className='d-flex justify-content-around'>
+                    <div className='d-flex justify-content-around flex-wrap'>
                         <div className={classes.divider}></div>
                     </div>
-                    <div className='d-flex justify-content-around'>
-                        <Card width='50%'>
+                    <div className={`${classes.padd} d-flex justify-content-around row flex-wrap `}>
+                        <Card>
                             {
                                 contacts.map((c) => {
                                     return (
-                                        <div className='mx-5'>
-                                            <img className={classes.icon} src={c.src} alt='mail' />
-                                            <span>{c.content}</span>
+                                        <div key={c.src} className='m-3 row '>
+                                            <div className='col-md-4 col-sm-12 '>
+                                                <img className={classes.icon} src={c.src} alt='mail' />
+                                            </div>
+                                            <div className='col-md-4 col-sm-12 '>
+                                                <span>{c.content}</span>
+                                            </div>
                                         </div>
                                     )
                                 })

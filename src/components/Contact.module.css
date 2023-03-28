@@ -6,3 +6,13 @@
     height: 6vh;
     margin: 2vh;
 }
+.padd{
+    padding-top: 2rem;
+    padding-left:15rem;
+    padding-right: 15rem;
+}
+@media screen and (max-width: 900px){
+    .padd{
+        padding: 2rem;
+    }
+}

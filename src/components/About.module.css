@@ -9,3 +9,17 @@
 span{
     font-weight: bolder;
 }
+.padd{
+    padding: 50px;
+}
+@media screen and (max-width: 320px){
+    .about_content{
+        font-size: 20px;
+    }
+    .padd{
+        padding: 10px;
+    }
+    .me{
+        font-size: 25px;
+    }
+}

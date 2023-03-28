@@ -110,12 +110,12 @@ function Skills() {
     return (
         <div className='d-flex justify-content-center w-100 mt-5' id='skills'>
             <Card width='80%' >
-                <div style={{ alignItems: 'center' }}>
+                <div className='mt-4'>
                     <h1 className='text-center'>Skills</h1>
                     <div className='d-flex justify-content-around'>
                         <div className={classes.divider}></div>
                     </div>
-                    <div className='row m-5'>
+                    <div className={`row ${classes.margin}`}>
                         <div className='col-md-6'>
                             <RenderSkills Pro_Lang={Pro_Lang} header='Programming Languages' />
                         </div>

@@ -46,24 +46,17 @@ let navArray = [
 ]
 
 function Appbar() {
-    // const [isHover, setIsHover] = useState(false);
-    const Reveal = (id) => {
-        // setIsHover(true);
-    }
-    const unReveal = (id) => {
-        // setIsHover(false);
-    }
-    // useEffect(()=>{console.log(isHover)},[isHover])
+
     return (
         <div className={`${classes.nav} z-1`}>
             <div className={` ${classes.bg}`}></div>
             <div className={`row ${classes.content} `}>
-                <div className='col-md-4 w-30'>
-                    <div className='w-50'>
+                <div className={`col-lg-4 col-sm-4 `}>
+                    <div className={` ${classes.width} ${classes.hide} `}>
                         <CurrentDate />
                     </div>
                 </div>
-                <div className={`col-md-4 `}>
+                <div className={`col-md-4 col-sm-5`}>
                     <div className='d-flex p-1 justify-content-center'>
                         <Card cursor='pointer'>
                             {
@@ -76,10 +69,10 @@ function Appbar() {
                                             smooth={true}
                                             offset={-60}
                                             duration={700}
+                                            key={nav.id}
                                         >
-                                            <span className={`p-2`} onMouseEnter={Reveal(`${nav.id}`)} onMouse={unReveal(`${nav.id}`)}>
+                                            <span className={classes.padd}>
                                                 {nav.icon}
-                                                 <span className={nav.hide} id='home'>{nav.navHead}</span>
                                             </span>
                                         </Link>
                                     )
@@ -88,9 +81,9 @@ function Appbar() {
                         </Card>
                     </div>
                 </div>
-                <div className={` col-md-4 z-1 `}>
-                    <div className=' d-flex justify-content-around'>
-                        <h3 className={classes.name}>Saurabh Sharma</h3>
+                <div className={` col-md-4 col-sm-4 z-1`}>
+                    <div className={` d-flex justify-content-around  `}>
+                        {/* <h3 className={classes.name}>Saurabh Sharma</h3> */}
                     </div>
                 </div>
             </div>

@@ -1,5 +1,8 @@
-@media screen and (max-width :600px){
-    .time{
+@media screen and (max-width :900px){
+    /* .time{
+        display: none;
+    } */
+    .hide{
         display: none;
     }
 }

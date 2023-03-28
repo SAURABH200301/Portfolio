@@ -1,0 +1,13 @@
+.padd{
+    padding-left: 6rem;
+}
+@media screen and (max-width: 320px){
+    .padd{
+        padding-left: 0.2rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .padd{
+        padding-left: 0.5rem;
+    }
+}

@@ -1,5 +1,7 @@
+/* eslint-disable no-restricted-globals */
 import React from 'react';
 import Card from './UI/Card';
+import WorkCard from './UI/WorkCard';
 import classes from './Work.module.css';
 import chatapp from '../image/chat_app.gif';
 import boxOffice from '../image/box_office.gif';
@@ -65,8 +67,8 @@ function Work() {
                     {
                         work.map((w) => {
                             return (
-                                <div className='text-center py-2 px-5'>
-                                    <Card>
+                                <div key={w.head} className={`text-center ${classes.padd}`}>
+                                    <WorkCard>
                                         <div className='d-flex justify-content-around row p-2'>
                                             <div className='col-md-6'>
                                                 <img className={`rounded ${classes.img}`} src={w.src} alt={w.src} />
@@ -79,7 +81,7 @@ function Work() {
                                                     {
                                                         w.techUsed.map((t) => {
                                                             return (
-                                                                <img className={classes.icon} src={t} alt='img' />
+                                                                <img key={t} className={classes.icon} src={t} alt={t.head} />
                                                             )
                                                         })
                                                     }
@@ -98,14 +100,14 @@ function Work() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </Card>
+                                    </WorkCard>
                                 </div>
                             )
                         })
                     }
-                    <div className='d-flex justify-content-center'>
-                        <Card width='8%'>
-                            <p className='fw-bold'>For More</p>
+                    <div className='d-flex justify-content-around'>
+                        <Card width='7vw'>
+                            <p className={`fw-bold fs-6 ${classes.forMo}`}>For More</p>
                             <a href='https://github.com/SAURABH200301'>
                                 <BsGithub style={{ fontSize: '6vh', color: 'black' }} />
                             </a>

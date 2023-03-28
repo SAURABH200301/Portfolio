@@ -6,8 +6,8 @@ import classes from './SocialMedia.module.css'
 
 function SocialMedia() {
     return (
-        <div className={`d-flex justify-content-around ${classes.social}`}>
-            <Card card='p-3 ' width='55%'>
+        <div className={`d-flex justify-content-around ${classes.social} w-100 `}>
+            <Card card='p-3 '>
                 <a href='https://www.linkedin.com/in/saurabh-sharma-a24259121/'>
                     <BsLinkedin style={{ fontSize: '6vw', color: 'darkblue' }} />
                 </a>

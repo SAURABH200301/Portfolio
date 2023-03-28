@@ -15,3 +15,24 @@
 .content{
     width: 40%;
 }
+.padd{
+    padding: 1rem;
+}
+@media screen and (max-width :600px) {
+    .img{
+        height: 200px;
+    }
+    .content{
+        padding-top: 10px;
+        width: 80%;
+    }
+    .forMo{
+        display: none;
+    }
+}
+@media screen and (max-width: 550px){
+    .img{
+        height: 100%;
+        width: 100%;
+    }
+}

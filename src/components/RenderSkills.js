@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from './UI/Card'
+import classes from './RenderSkills.module.css'
 
 function RenderSkills(props) {
     return (
@@ -8,7 +9,7 @@ function RenderSkills(props) {
             {
                 props.Pro_Lang.map((lang) => {
                     return (
-                        <div style={{paddingLeft: '6vw'}}> 
+                        <div key={lang.id} className={classes.padd}> 
                             <img className={lang.class} src={lang.src} alt={lang.id} />
                             <span>{lang.id}</span>
                         </div>
