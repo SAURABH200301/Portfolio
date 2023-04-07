@@ -3,28 +3,25 @@
     margin: 10px;
     /* margin-right: 10px; */
 }
+.icon{
+    height: 6vh;
+}
+.resume{
+    display: flex;
+    flex-direction: row-reverse;
+}
 .nav{
-    top:10px;
+    top: 0.1rem;
     position: sticky;
 }
 .content{
     width: 100%;
     height: 12vh;
-    
-}
-.bg{
-    width: 100%;
-    height: 12vh ;
-    position: absolute;
-    backdrop-filter: saturate(180%) blur(10px);
-    background-size: cover;
-    /* border: 1px solid black; */
 }
 .width{
     width: 50%;
 }
 .toggle{
-    /* border:1px solid black; */
     left:10px
 }
 @media screen and (max-width: 900px){
@@ -37,10 +34,13 @@
     .padd{
         padding: -10px;
     }
+    .resume{
+        display: none;
+    }
   }
-  
 @media screen and (max-width: 600px){
     .hide{
         display: none;
     }
+    
 }

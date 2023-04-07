@@ -1,0 +1,8 @@
+.icon{
+    height: 3rem;
+}
+.resume{
+    display: flex;
+    justify-content: center;
+    width: inherit;
+}

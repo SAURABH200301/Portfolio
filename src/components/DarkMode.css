@@ -3,11 +3,12 @@
     --color-light: #ffffff;
 }
 body{
-    background: linear-gradient(#F9F5EB,#E4DCCF);
+    background-image: url('../image/bg1.jpg');
     transition: 0.3s;
 }
 body.dark{
     background: rgba(55, 65, 76, 0.472); 
+    background-image: url('../image/bg4.jpg');
 }
 input{
     display: none;
@@ -49,6 +50,7 @@ input{
 }
 body.dark .switch{
     background: var(--color-light);
+    
 }
 body.dark .handle{
     translate: 30px 0;

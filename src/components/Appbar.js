@@ -8,7 +8,7 @@ import { SiAboutdotme } from 'react-icons/si';
 import { AiOutlineContacts } from 'react-icons/ai';
 import { GiSkills } from 'react-icons/gi';
 import { Link } from "react-scroll";
-
+import Resume from './Resume'
 
 let navArray = [
     {
@@ -48,9 +48,8 @@ let navArray = [
 function Appbar() {
 
     return (
-        <div className={`${classes.nav} z-1`}>
-            <div className={` ${classes.bg}`}></div>
-            <div className={`row ${classes.content} `}>
+        <div className={`${classes.nav} z-1 `}>
+            <div className={`row ${classes.content}`}>
                 <div className={`col-lg-4 col-sm-4 `}>
                     <div className={` ${classes.width} ${classes.hide} `}>
                         <CurrentDate />
@@ -81,8 +80,8 @@ function Appbar() {
                         </Card>
                     </div>
                 </div>
-                <div className={` col-md-4 col-sm-4 z-1 `}>
-                    
+                <div className={`  col-md-4  ${classes.resume}`}>
+                    <Resume/>
                 </div>
             </div>
         </div>

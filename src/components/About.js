@@ -18,6 +18,7 @@ function About() {
                         I'm a <span>Programmer, Full Stack Developer</span>. I love developing new things. I do play Valorant, PUBG and Chess to avoid coffee sometimes ;).
                         <br/>
                         Constantly <span>looking for new ideas</span> to implement in real world.
+                        {/* https://drive.google.com/file/d/1wBB_xQaGBDf3sma5m-0OdhKar0AP4OMA/view?usp=sharing */}
                     </div>
                 </div>
             </Card>
