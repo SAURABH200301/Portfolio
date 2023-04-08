@@ -3,12 +3,13 @@
     --color-light: #ffffff;
 }
 body{
-    background-image: url('../image/bg1.jpg');
+    /* background: linear-gradient(45deg,#FF3131,#0096FF,#FFDB58); */
+    background-image: url('../image/bg7.jpg');
     transition: 0.3s;
 }
 body.dark{
     background: rgba(55, 65, 76, 0.472); 
-    background-image: url('../image/bg4.jpg');
+    background-image: url('../image/bg3.jpg');
 }
 input{
     display: none;

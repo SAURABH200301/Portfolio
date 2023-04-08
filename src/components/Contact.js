@@ -6,6 +6,7 @@ import phone from '../image/phone.png'
 import linkedin from '../image/linkedin.png'
 import insta from '../image/insta.png'
 import twitter from '../image/twitter.png'
+import LeftIn from '../Animation/LeftIn.js'
 
 const contacts = [
     {
@@ -39,23 +40,25 @@ function Contact() {
                         <div className={classes.divider}></div>
                     </div>
                     <div className={`${classes.padd} d-flex justify-content-around row flex-wrap `}>
-                        <Card>
-                            {
-                                contacts.map((c) => {
-                                    return (
-                                        <div key={c.src} className='m-3 row '>
-                                            <div className='col-md-4 col-sm-12 '>
-                                                <img className={classes.icon} src={c.src} alt='mail' />
-                                            </div>
-                                            <div className='col-md-4 col-sm-12 '>
-                                                <span>{c.content}</span>
-                                            </div>
-                                        </div>
-                                    )
-                                })
-                            }
+                            <Card>
+                                {
+                                    contacts.map((c) => {
+                                        return (
+                                            <LeftIn>
+                                                <div key={c.src} className='m-3 row '>
+                                                    <div className='col-md-4 col-sm-12 '>
+                                                        <img className={classes.icon} src={c.src} alt='mail' />
+                                                    </div>
+                                                    <div className='col-md-4 col-sm-12 '>
+                                                        <span>{c.content}</span>
+                                                    </div>
+                                                </div>
+                                            </LeftIn>
+                                        )
+                                    })
+                                }
 
-                        </Card>
+                            </Card>
                     </div>
                 </div>
             </Card>

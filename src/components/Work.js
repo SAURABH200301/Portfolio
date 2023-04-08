@@ -15,6 +15,7 @@ import html from '../image/html.png';
 import css from '../image/css.png';
 import js from '../image/js.png'
 import link from '../image/link.png'
+import LeftIn from '../Animation/LeftIn';
 
 
 const work = [
@@ -70,10 +71,15 @@ function Work() {
                                 <div key={w.head} className={`text-center ${classes.padd}`}>
                                     <WorkCard>
                                         <div className='d-flex justify-content-around row p-2'>
+
                                             <div className='col-md-6'>
-                                                <img className={`rounded ${classes.img}`} src={w.src} alt={w.src} />
+                                                <LeftIn>
+                                                    <img className={`rounded ${classes.img}`} src={w.src} alt={w.src} />
+                                                </LeftIn>
                                             </div>
+
                                             <div className={`${classes.content} col-md-6 `}>
+                                                <LeftIn>
                                                 <h3>{w.head}</h3>
                                                 <p>{w.desc}</p>
                                                 <h5>Technologies Used</h5>
@@ -98,6 +104,7 @@ function Work() {
                                                         <BsGithub style={{ fontSize: '6vh', color: 'black' }} />
                                                     </a>
                                                 </div>
+                                                </LeftIn>
                                             </div>
                                         </div>
                                     </WorkCard>

@@ -51,9 +51,9 @@ const Backend = [
         id: 'Node',
         src: node,
         class: classes.icon
-    },{
-        id:'Firebase',
-        src : firebase,
+    }, {
+        id: 'Firebase',
+        src: firebase,
         class: classes.icon
     }
 ]
@@ -109,28 +109,30 @@ const other = [
 function Skills() {
     return (
         <div className='d-flex justify-content-center w-100 mt-5' id='skills'>
-            <Card width='80%' >
-                <div className='mt-4'>
-                    <h1 className='text-center'>Skills</h1>
-                    <div className='d-flex justify-content-around'>
-                        <div className={classes.divider}></div>
+            
+                <Card width='80%' >
+                    <div className='mt-4'>
+                        <h1 className='text-center'>Skills</h1>
+                        <div className='d-flex justify-content-around'>
+                            <div className={classes.divider}></div>
+                        </div>
+                        <div className={`row ${classes.margin}`}>
+                            <div className='col-md-6'>
+                                <RenderSkills Pro_Lang={Pro_Lang} header='Programming Languages' />
+                            </div>
+                            <div className='col-md-6'>
+                                <RenderSkills Pro_Lang={Frontend} header='Frontend' />
+                            </div>
+                            <div className='col-md-6'>
+                                <RenderSkills Pro_Lang={other} header='Other' />
+                            </div>
+                            <div className='col-md-6'>
+                                <RenderSkills Pro_Lang={Backend} header='Backend' />
+                            </div>
+                        </div>
                     </div>
-                    <div className={`row ${classes.margin}`}>
-                        <div className='col-md-6'>
-                            <RenderSkills Pro_Lang={Pro_Lang} header='Programming Languages' />
-                        </div>
-                        <div className='col-md-6'>
-                            <RenderSkills Pro_Lang={Frontend} header='Frontend' />
-                        </div>
-                        <div className='col-md-6'>
-                            <RenderSkills Pro_Lang={other} header='Other' />
-                        </div>
-                        <div className='col-md-6'>
-                            <RenderSkills Pro_Lang={Backend} header='Backend' />
-                        </div>
-                    </div>
-                </div>
-            </Card>
+                </Card>
+            
         </div>
     )
 }
