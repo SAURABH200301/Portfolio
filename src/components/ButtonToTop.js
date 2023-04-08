@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-scroll";
 import classes from './ButtonToTop.module.css'
-import arrow from '../image/arrow.png'
+import arrow from '../image/arrow2.png'
 
 function ButtonToTop() {
     return (
