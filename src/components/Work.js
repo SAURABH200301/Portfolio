@@ -96,7 +96,7 @@ function Work() {
                                                 <div className='d-flex justify-content-center '>
                                                     {
                                                         w.isLive &&
-                                                        <a href={w.LiveLink} >
+                                                        <a href={w.LiveLink}>
                                                             <img className={classes.icon} src={link} alt='link' />
                                                         </a>
                                                     }

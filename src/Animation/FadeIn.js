@@ -5,7 +5,7 @@ function FadeIn(props) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: false })
     return (
-        <section ref={ref}>
+        <section ref={ref} >
             <span
                 style={{
                     transform: isInView ? "none" : "translateX(-100px)",

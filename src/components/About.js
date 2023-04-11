@@ -15,7 +15,7 @@ function About() {
                         <div className={classes.divider}></div>
                     </div>
                     <FadeIn>
-                        <div className={`${classes.padd} ${classes.about_content} `}>
+                        <div className={`${classes.about_content} `}>
                             Hi! I'm <span>Saurabh Sharma</span>, and I'm a Computer Science & Engineering Student.
                             I'm a <span>Programmer, Full Stack Developer</span>. I love developing new things. I do play Valorant, PUBG and Chess to avoid coffee sometimes ;).
                             <br />
