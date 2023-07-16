@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext,useState,useEffect } from 'react';
 import classes from './App.module.css';
 import About from './components/About';
 import Appbar from './components/Appbar';
@@ -13,7 +13,27 @@ import { DarkModeContext } from './components/context/DarkModeContext';
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
-  const color = darkMode ? 'white' : 'black'
+  const color = darkMode ? 'white' : 'black';
+
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    // Show the button when the user scrolls down the page
+    function handleScroll() {
+      if (window.pageYOffset > 0) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <div id='home'>
       <Appbar />
@@ -26,7 +46,9 @@ function App() {
       </div>
       <div><Resume /></div>
       <div className={classes.button}><DarkModeToggle /></div>
-      <ButtonToTop />
+      <div className={`${classes.buttonContainer} ${showButton ? classes.show : ''}`}>
+        <ButtonToTop />
+      </div>
       <div className='text-center m-3 p-3' style={{ color: color }} >
         <p style={{ fontSize: '3vh' }}>Hey there! Thanks for checking out my website. Feel free to contact me :)</p>
         <h3 className={classes.name}>~ Saurabh Sharma ~</h3>

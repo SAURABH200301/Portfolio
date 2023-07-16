@@ -5,6 +5,15 @@ body{
 .name{
     font-family: 'Alkatra', cursive;
 }
+.buttonContainer {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.buttonContainer.show {
+  opacity: 1;
+}
+
 .button{
   
     position: fixed; 
