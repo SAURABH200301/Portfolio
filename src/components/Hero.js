@@ -21,7 +21,7 @@ function Hero() {
                     <h1 className='m-2 p-3 w-100 ' id='app'>
                         <Typewriter
                             options={{
-                                strings: ['I\'m Saurabh Sharma', 'I\'m Full Stack Developer!'],
+                                strings: ['I\'m Saurabh Sharma', 'I\'m Full Stack Developer!','I\'m Freelancer!'],
                                 autoStart: true,
                                 loop: true,
                             }}

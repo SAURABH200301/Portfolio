@@ -18,7 +18,6 @@ function App() {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
-    // Show the button when the user scrolls down the page
     function handleScroll() {
       if (window.pageYOffset > 0) {
         setShowButton(true);
@@ -28,8 +27,6 @@ function App() {
     }
 
     window.addEventListener('scroll', handleScroll);
-
-    // Clean up the event listener when the component is unmounted
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
