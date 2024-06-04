@@ -7,6 +7,7 @@ import { MdOutlineHomeWork } from 'react-icons/md'
 import { SiAboutdotme } from 'react-icons/si';
 import { AiOutlineContacts } from 'react-icons/ai';
 import { GiSkills } from 'react-icons/gi';
+import { GoBriefcase } from "react-icons/go";
 import { Link } from "react-scroll";
 import Resume from './Resume'
 
@@ -29,13 +30,18 @@ let navArray = [
         id: 'skills',
         hide: classes.hide
     },
+    // {
+    //     navHead: 'Work Experience',
+    //     icon: <GoBriefcase style={{ fontSize: '30px' }} />,
+    //     id: 'workExp',
+    //     hide: classes.hide
+    // },
     {
         navHead: 'Work',
         icon: <MdOutlineHomeWork style={{ fontSize: '30px' }} />,
         id: 'work',
         hide: classes.hide
     },
-
     {
         navHead: 'Contact',
         icon: <AiOutlineContacts style={{ fontSize: '30px' }} />,
