@@ -81,9 +81,9 @@ function Work() {
                         <div className={classes.divider}></div>
                     </div>
                     {
-                        work.map((w) => {
+                        work.map((w,i) => {
                             return (
-                                <div key={w.head} className={`text-center ${classes.padd}`}>
+                                <div key={i} className={`text-center ${classes.padd}`}>
                                     <WorkCard>
                                         <div className='d-flex justify-content-around row p-2'>
 
