@@ -31,8 +31,8 @@ function CurrentDate() {
     return (
         <div >
             <Card>
-                <div className='d-flex justify-content-around fw-bold p-1'><span>{icon}</span><span  className={`${classes.hide}`}>{greet}</span></div>
-                <div className={`d-flex justify-content-around fw-bold `}><span  className={`${classes.hide}`}>{date.toLocaleDateString()}</span></div>
+                <div className='d-flex justify-content-around fw-bold p-1'><span className='mx-1'>{icon}</span><span  className={`${classes.hide} ${classes.fs}`}>{greet}</span></div>
+                <div className={`d-flex justify-content-around fw-bold `}><span  className={`${classes.hide} ${classes.fs}`}>{date.toLocaleDateString()}</span></div>
             </Card>
         </div>
     )

@@ -19,7 +19,7 @@
     height: 12vh;
 }
 .width{
-    width: 50%;
+    width: 60%;
 }
 .toggle{
     left:10px
@@ -38,6 +38,7 @@
         display: none;
     }
   }
+  
 @media screen and (max-width: 600px){
     .hide{
         display: none;

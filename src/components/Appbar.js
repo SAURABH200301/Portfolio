@@ -30,12 +30,12 @@ let navArray = [
         id: 'skills',
         hide: classes.hide
     },
-    // {
-    //     navHead: 'Work Experience',
-    //     icon: <GoBriefcase style={{ fontSize: '30px' }} />,
-    //     id: 'workExp',
-    //     hide: classes.hide
-    // },
+    {
+        navHead: 'Work Experience',
+        icon: <GoBriefcase style={{ fontSize: '30px' }} />,
+        id: 'workExp',
+        hide: classes.hide
+    },
     {
         navHead: 'Work',
         icon: <MdOutlineHomeWork style={{ fontSize: '30px' }} />,
@@ -56,12 +56,12 @@ function Appbar() {
     return (
         <div className={`${classes.nav} z-1 `}>
             <div className={`row ${classes.content}`}>
-                <div className={`col-lg-4 col-sm-4 `}>
+                <div className={`col-md-3 col-sm-4 `}>
                     <div className={` ${classes.width} ${classes.hide} `}>
                         <CurrentDate />
                     </div>
                 </div>
-                <div className={`col-md-4 col-sm-5`}>
+                <div className={`col-md-6 col-sm-6`}>
                     <div className='d-flex p-1 justify-content-center'>
                         <Card cursor='pointer'>
                             {
@@ -86,7 +86,7 @@ function Appbar() {
                         </Card>
                     </div>
                 </div>
-                <div className={`  col-md-4  ${classes.resume}`}>
+                <div className={`  col-md-3  ${classes.resume}`}>
                     <Resume/>
                 </div>
             </div>

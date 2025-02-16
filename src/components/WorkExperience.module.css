@@ -1,0 +1,12 @@
+.divider{
+    width: 5%;
+    border: 1px solid black;
+}
+.img{
+    margin: 20px;
+    height: 20vw;
+    width: 20vw;
+}
+.badgeClass{
+    width: min-content;
+}

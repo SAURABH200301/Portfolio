@@ -18,7 +18,10 @@ import vs from '../image/vs.png';
 import firebase from '../image/firebase.png';
 import mongo from '../image/mongo.png';
 import redux from '../image/redux.png';
-import express from '../image/express.png'
+import express from '../image/express.png';
+import angular from '../image/angulat.png';
+import sass from '../image/sass.png';
+import lodash from '../image/lodash.png';
 
 
 const Pro_Lang = [
@@ -76,6 +79,11 @@ const Frontend = [
         class: classes.icon
     },
     {
+        id:'SASS',
+        src: sass,
+        class:classes.icon
+    },
+    {
         id: 'ReactJs',
         src: react,
         class: classes.icon
@@ -89,6 +97,16 @@ const Frontend = [
         id: 'Redux',
         src: redux,
         class: classes.icon
+    },
+    {
+        id: 'Angular',
+        src: angular,
+        class:classes.icon
+    },
+    {
+        id:'LodashJS',
+        src: lodash,
+        class:classes.icon
     }
 ]
 const other = [

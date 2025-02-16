@@ -2,7 +2,6 @@ import React from 'react'
 import Card from './UI/Card'
 import classes from './Contact.module.css'
 import mail from '../image/mail.png'
-import phone from '../image/phone.png'
 import linkedin from '../image/linkedin.png'
 import insta from '../image/insta.png'
 import twitter from '../image/twitter.png'
@@ -12,10 +11,6 @@ const contacts = [
     {
         src: mail,
         content: 'saurabhsha2003@gmail.com'
-    },
-    {
-        src: phone,
-        content: '9455158814'
     },
     {
         src: linkedin,

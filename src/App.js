@@ -10,6 +10,7 @@ import Resume from './components/Resume';
 import Skills from './components/Skills';
 import Work from './components/Work';
 import { DarkModeContext } from './components/context/DarkModeContext';
+import WorkExperience from './components/WorkExperience';
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -38,6 +39,7 @@ function App() {
         <Hero />
         <About />
         <Skills />
+        <WorkExperience/>
         <Work />
         <Contact />
       </div>
