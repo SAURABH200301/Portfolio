@@ -41,7 +41,11 @@ export default function WorkExperience(){
                                                     <h5 className='mt-1'>Designation: {w.designation}</h5>
                                                     <span className='mt-1'>Start Date: {w.startDate}   {!w.currentlyWorking && <span>- End Date: {w.endDate}</span>}</span>
                                                     {!w.currentlyWorking && <p className='mt-1'>Duration: {w.durationMonths} Months</p>}
-                                                    <p className='mt-1'>{w.description}</p>
+                                                    {w.description.map((desc, index) => {
+                                                        return (
+                                                            <p key={index} className={` ${desc.includes('Tech Used') ? classes.bold : ''}`}>{desc}</p>
+                                                        )
+                                                    })}
                                                 </LeftIn>
                                             </div>
                                         </div>

@@ -10,3 +10,6 @@
 .badgeClass{
     width: min-content;
 }
+.bold{
+    font-weight: bold;
+}

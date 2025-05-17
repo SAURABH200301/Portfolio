@@ -17,7 +17,13 @@ export const WorkExperiences=[
         durationMonths:0,
         typeOfExperience: ExperienceType.FULL_TIME,
         designation:'Computer Scientist',
-        description:'Collaborating with teams and delivering the enhanced products.',
+        description: [
+            "Developed strategic project plans and authored technical documentation to improve team understanding and productivity.",
+            "Mentored junior team members, fostering collaboration and knowledge sharing.",
+            "Delivered multiple high-quality projects on time, enhancing user experience with intuitive and user-friendly interfaces.",
+            "Improved software efficiency through optimized algorithms and scalable solutions for long-term growth.",
+            "Tech Used: AngularTS, RxJS, Lodash, Dragula, SCSS, angular UI, NodeJS,material UI",
+          ]          
     },
     {
         organizationName:'Belzabar Software Design India Private Limited',
@@ -28,7 +34,10 @@ export const WorkExperiences=[
         durationMonths:9,
         typeOfExperience: ExperienceType.INTERN,
         designation:'Front-End developer Intern',
-        description:'During this period, I enhanced my skills in Angular TypeScript, LodashJS, and Linux for front-end development. I learned effective team collaboration and gained insight into the product creation process, from development to client delivery.'
+        description:[
+            'During this period, I enhanced my skills in Angular TypeScript, LodashJS, and Linux for front-end development.',
+            'I learned effective team collaboration and gained insight into the product creation process, from development to client delivery.'
+        ]
     },
     {
         organizationName:'Ready Coder Private Limited',
@@ -39,6 +48,8 @@ export const WorkExperiences=[
         durationMonths:2,
         typeOfExperience: ExperienceType.INTERN,
         designation:'Front-End developer Intern',
-        description:'I worked as front end developer intern and learned react framework, created few pages and learned about the components and other react concepts.'
+        description:[
+            'I worked as front end developer intern and learned react framework, created few pages and learned about the components and other react concepts.'
+        ]
     },
 ]
