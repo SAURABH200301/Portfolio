@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './Resume.module.css';
 import resume from '../image/resume.png'
-export const resumeLinks='https://drive.google.com/file/d/1DSrmFNoL8-QXHsOcvJLoYY3Q_zuNkAEU/view?usp=sharing'
+export const resumeLinks='https://drive.google.com/file/d/1UtbqSwdNITTFXgYWsXCnWJTUnA6PY8-A/view?usp=sharing'
 
 function Resume() {
     const resumeLink=resumeLinks;
