@@ -100,10 +100,10 @@ function Work() {
                                                     <h5>Technologies Used</h5>
                                                     <div>
                                                         {
-                                                            w.techUsed.map((t) => {
+                                                            w.techUsed.map((t,i) => {
                                                                 return (
                                                                 <>
-                                                                    <img key={t} className={classes.icon} src={t} alt={t.head} />
+                                                                    <img key={i} className={classes.icon} src={t} alt={t.head} />
                                                                 </>
                                                                 )
                                                             })

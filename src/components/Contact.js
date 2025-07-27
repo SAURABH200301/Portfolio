@@ -37,10 +37,10 @@ function Contact() {
                     <div className={`${classes.padd} d-flex justify-content-around row flex-wrap `}>
                             <Card>
                                 {
-                                    contacts.map((c) => {
+                                    contacts.map((c,i) => {
                                         return (
                                             <LeftIn>
-                                                <div key={c.src} className='m-3 row '>
+                                                <div key={i} className='m-3 row '>
                                                     <div className='col-md-4 col-sm-12 '>
                                                         <img className={classes.icon} src={c.src} alt='mail' />
                                                     </div>

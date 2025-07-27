@@ -22,9 +22,10 @@ import express from '../image/express.png';
 import angular from '../image/angulat.png';
 import sass from '../image/sass.png';
 import lodash from '../image/lodash.png';
+import ts from '../image/typescript.png';
 
 
-const Pro_Lang = [
+export const Pro_Lang = [
     {
         id: 'CPP',
         src: cpp,
@@ -45,8 +46,13 @@ const Pro_Lang = [
         src: js,
         class: classes.icon
     },
+     {
+        id: 'TypeScript',
+        src: ts,
+        class: classes.icon
+    },
 ]
-const Backend = [
+export const Backend = [
     {
         id: 'Express',
         src: express,
@@ -67,7 +73,7 @@ const Backend = [
         class: classes.icon
     }
 ]
-const Frontend = [
+export const Frontend = [
     {
         id: 'HTML',
         src: html,
@@ -109,7 +115,7 @@ const Frontend = [
         class:classes.icon
     }
 ]
-const other = [
+export const other = [
     {
         id: 'GitHub',
         src: github,
