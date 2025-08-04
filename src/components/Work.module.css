@@ -15,6 +15,9 @@
 .content{
     width: 40%;
 }
+.content p{
+    text-align: justify;
+}
 .padd{
     padding: 1rem;
 }

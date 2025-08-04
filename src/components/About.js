@@ -10,8 +10,8 @@ function About() {
         <SocialMedia />
         <div className={`text-center p-1`}>
           <div className="d-flex justify-content-around text-center">
-            <h4>#OPENTOWORK </h4>
-            <h4>#OPEN TO RELOCATE</h4>
+            <h5>#OPENTOWORK </h5>
+            <h5>#OPEN TO RELOCATE</h5>
           </div>
           <h1 className={classes.me}>About Me</h1>
 
