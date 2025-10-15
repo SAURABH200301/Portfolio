@@ -25,7 +25,9 @@ import lodash from "../image/lodash.png";
 import ts from "../image/typescript.png";
 import axios from "../image/axios.png";
 import tailwind from "../image/tailwind.svg";
-import copliot from '../image/github-copilot.webp'
+import copliot from "../image/github-copilot.webp";
+import go from "../image/go.png";
+import cursor from "../image/cursor.png";
 
 export const Pro_Lang = [
   {
@@ -73,6 +75,11 @@ export const Backend = [
   {
     id: "MongoDB",
     src: mongo,
+    class: classes.icon,
+  },
+  {
+    id: "Go",
+    src: go,
     class: classes.icon,
   },
   {
@@ -153,6 +160,11 @@ export const other = [
   {
     id: "VS Code",
     src: vs,
+    class: classes.icon,
+  },
+  {
+    id: "Cursor",
+    src: cursor,
     class: classes.icon,
   },
 ];

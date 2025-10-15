@@ -11,7 +11,6 @@ function About() {
         <div className={`text-center p-1`}>
           <div className="d-flex justify-content-around text-center">
             <h5>#OPENTOWORK </h5>
-            <h5>#OPEN TO RELOCATE</h5>
           </div>
           <h1 className={classes.me}>About Me</h1>
 

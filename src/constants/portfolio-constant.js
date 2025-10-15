@@ -1,12 +1,28 @@
 import belzabarLogo from "../image/belzabarLogo.png";
 import readyCodeLogo from "../image/readyCoderLogo.png";
+import truvanta from "../image/truvanta.jpeg";
 
 export const ExperienceType = {
   INTERN: "Trainee",
   FULL_TIME: "Full Time",
+  CONTRACT :"Contract"
 };
 
 export const WorkExperiences = [
+   {
+    organizationName: "Truvanta Inc",
+    organizationLogo: truvanta,
+    startDate: "Aug 2025",
+    currentlyWorking: false,
+    endDate: "Oct 2025",
+    durationMonths: 3,
+    typeOfExperience: ExperienceType.CONTRACT,
+    designation: "Backend Developer",
+    description: [
+      "Developed and deliver features: Like documentation similar to google docs",
+      "Worked on go based backend and msi applications"
+    ],
+  },
   {
     organizationName: "Belzabar Software Design India Private Limited",
     organizationLogo: belzabarLogo,
