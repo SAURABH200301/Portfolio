@@ -10,7 +10,7 @@ function LeftIn(props) {
                 animate={{
                     x: isInView ? 0 : -1100
                 }}
-                transition={{ type: "spring", stiffness: 100, delay: 0.4 }}
+                transition={{ type: "spring", stiffness: 50, delay: 0.1 }}
             >
                 {props.children}
             </motion.div>

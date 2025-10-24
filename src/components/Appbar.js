@@ -58,7 +58,7 @@ function Appbar() {
             <div className={`row ${classes.content}`}>
                 <div className={`col-md-3 col-sm-4 `}>
                     <div className={` ${classes.width} ${classes.hide} `}>
-                        <CurrentDate />
+                        {/* <CurrentDate /> */}
                     </div>
                 </div>
                 <div className={`col-md-6 col-sm-6`}>
