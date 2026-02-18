@@ -45,3 +45,11 @@
     }
     
 }
+
+.link{
+    color: black;
+}
+.active{
+    color: #4169E1;
+    text-decoration: underline;
+}

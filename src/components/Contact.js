@@ -39,7 +39,7 @@ function Contact() {
                                 {
                                     contacts.map((c,i) => {
                                         return (
-                                            <LeftIn>
+                                            <LeftIn key={i}>
                                                 <div key={i} className='m-3 row '>
                                                     <div className='col-md-4 col-sm-12 '>
                                                         <img className={classes.icon} src={c.src} alt='mail' />

@@ -9,6 +9,7 @@ function ButtonToTop() {
             <Link
                 activeClass="active"
                 to='home'
+                href='home'
                 spy={true}
                 smooth={true}
                 offset={-60}

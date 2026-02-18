@@ -9,9 +9,9 @@ function About() {
       <Card card="d-flex justify-content-center " width="80%">
         <SocialMedia />
         <div className={`text-center p-1`}>
-          <div className="d-flex justify-content-around text-center">
+          {/* <div className="d-flex justify-content-around text-center">
             <h5>#OPENTOWORK </h5>
-          </div>
+          </div> */}
           <h1 className={classes.me}>About Me</h1>
 
           <div className="d-flex justify-content-around">

@@ -68,13 +68,15 @@ function Appbar() {
                                 navArray.map((nav) => {
                                     return (
                                         <Link
-                                            activeClass="active"
+                                            activeClass={classes.active}
                                             to={nav.id}
                                             spy={true}
                                             smooth={true}
                                             offset={-60}
                                             duration={700}
                                             key={nav.id}
+                                            href={nav.id}
+                                            className={classes.link}
                                         >
                                             <span className={classes.padd}>
                                                 {nav.icon}

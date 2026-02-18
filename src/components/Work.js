@@ -3,11 +3,11 @@ import React from "react";
 import Card from "./UI/Card";
 import WorkCard from "./UI/WorkCard";
 import classes from "./Work.module.css";
-import chatapp from "../image/chat_app.gif";
-import boxOffice from "../image/box_office.gif";
-import newsApp from "../image/newsapp.gif";
-import musicPlayer from "../image/musicplayer.gif";
-import tasky from "../image/Tasky.gif";
+import chatapp from "../image/chat_app.webm";
+import boxOffice from "../image/box_office.webm";
+import newsApp from "../image/newsapp.webm";
+import musicPlayer from "../image/musicplayer.webm";
+import tasky from "../image/Tasky.webm";
 import { BsGithub } from "react-icons/bs";
 import react from "../image/react.png";
 import express from "../image/express.png";
@@ -24,7 +24,7 @@ import bootstrap from "../image/BS.png";
 import typescript from "../image/typescript.png";
 import axios from "../image/axios.png";
 import tailwind from "../image/tailwind.svg";
-import theme from '../image/theme.gif'
+import theme from "../image/theme.webm";
 
 const work = [
   {
@@ -93,16 +93,24 @@ function Work() {
           </div>
           {work.map((w, i) => {
             return (
-              <div key={i} className={`text-center ${classes.padd}`}>
+              <div
+                key={`${i}${w.src}`}
+                className={`text-center ${classes.padd}`}
+              >
                 <WorkCard>
                   <div className="d-flex justify-content-around row p-2">
                     <div className="col-md-6">
                       <LeftIn>
-                        <img
+                        <video
+                          autoPlay
+                          loop
+                          muted
+                          poster={w.src}
                           className={`rounded ${classes.img}`}
-                          src={w.src}
-                          alt={w.src}
-                        />
+                        >
+                          <source src={w.src} type="video/webm" />
+                          Your browser does not support the video tag.
+                        </video>
                       </LeftIn>
                     </div>
 
@@ -114,14 +122,12 @@ function Work() {
                         <div>
                           {w.techUsed.map((t, i) => {
                             return (
-                              <>
-                                <img
-                                  key={i}
-                                  className={classes.icon}
-                                  src={t}
-                                  alt={t.head}
-                                />
-                              </>
+                              <img
+                                key={`${i}${w.head}`}
+                                className={classes.icon}
+                                src={t}
+                                alt={w.head}
+                              />
                             );
                           })}
                         </div>

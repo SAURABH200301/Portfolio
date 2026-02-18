@@ -10,7 +10,7 @@ function Hero() {
   return (
     <div className={`text-center `}>
       <div className={`w-100 ${classes.avatar}`}>
-          <img className={classes.img} src={avatar} alt="profile_photo" />
+          <img className={classes.img} src={avatar} alt="profile_photo" fetchpriority='high'/>
       </div>
 
       <div>
