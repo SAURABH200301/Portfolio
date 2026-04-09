@@ -100,55 +100,55 @@ function Work() {
                 <WorkCard>
                   <div className="d-flex justify-content-around row p-2">
                     <div className="col-md-6">
-                      <LeftIn>
-                        <video
-                          autoPlay
-                          loop
-                          muted
-                          poster={w.src}
-                          className={`rounded ${classes.img}`}
-                        >
-                          <source src={w.src} type="video/webm" />
-                          Your browser does not support the video tag.
-                        </video>
-                      </LeftIn>
+                      {/* <LeftIn> */}
+                      <video
+                        autoPlay
+                        loop
+                        muted
+                        poster={w.src}
+                        className={`rounded w-100 ${classes.img}`}
+                      >
+                        <source src={w.src} type="video/webm" />
+                        Your browser does not support the video tag.
+                      </video>
+                      {/* </LeftIn> */}
                     </div>
 
                     <div className={`${classes.content} col-md-6`}>
-                      <LeftIn>
-                        <h3>{w.head}</h3>
-                        <p className="px-3">{w.desc}</p>
-                        <h5>Technologies Used</h5>
-                        <div>
-                          {w.techUsed.map((t, i) => {
-                            return (
-                              <img
-                                key={`${i}${w.head}`}
-                                className={classes.icon}
-                                src={t}
-                                alt={w.head}
-                              />
-                            );
-                          })}
-                        </div>
-                        <h5>Links</h5>
-                        <div className="d-flex justify-content-center ">
-                          {w.isLive && (
-                            <a href={w.LiveLink}>
-                              <img
-                                className={classes.icon}
-                                src={link}
-                                alt="link"
-                              />
-                            </a>
-                          )}
-                          <a href={w.GithubLink} className="mt-2 pt-4 ">
-                            <BsGithub
-                              style={{ fontSize: "6vh", color: "black" }}
+                      {/* <LeftIn> */}
+                      <h3>{w.head}</h3>
+                      <p className="px-3">{w.desc}</p>
+                      <h5>Technologies Used</h5>
+                      <div>
+                        {w.techUsed.map((t, i) => {
+                          return (
+                            <img
+                              key={`${i}${w.head}`}
+                              className={classes.icon}
+                              src={t}
+                              alt={w.head}
+                            />
+                          );
+                        })}
+                      </div>
+                      <h5>Links</h5>
+                      <div className="d-flex justify-content-center ">
+                        {w.isLive && (
+                          <a href={w.LiveLink}>
+                            <img
+                              className={classes.icon}
+                              src={link}
+                              alt="link"
                             />
                           </a>
-                        </div>
-                      </LeftIn>
+                        )}
+                        <a href={w.GithubLink} className="mt-2 pt-4 ">
+                          <BsGithub
+                            style={{ fontSize: "6vh", color: "black" }}
+                          />
+                        </a>
+                      </div>
+                      {/* </LeftIn> */}
                     </div>
                   </div>
                 </WorkCard>

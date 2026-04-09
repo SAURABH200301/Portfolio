@@ -21,71 +21,69 @@ export default function WorkExperience() {
                 <WorkCard>
                   <div className="d-flex justify-content-around row p-2">
                     <div className="col-md-6">
-                      <LeftIn>
-                        <div className="d-flex flex-column">
-                          <div className="d-flex justify-content-start">
-                            <span
-                              className={`badge text-bg-dark rounded-pill mx-1 ${
-                                w.typeOfExperience === ExperienceType.FULL_TIME
-                                  ? 'bg-success'
-                                  : w.typeOfExperience === ExperienceType.CONTRACT
-                                    ? 'bg-primary'
-                                    : 'bg-danger'
+                      {/* <LeftIn> */}
+                      <div className="d-flex flex-column">
+                        <div className="d-flex justify-content-start">
+                          <span
+                            className={`badge text-bg-dark rounded-pill mx-1 ${w.typeOfExperience === ExperienceType.FULL_TIME
+                                ? 'bg-success'
+                                : w.typeOfExperience === ExperienceType.CONTRACT
+                                  ? 'bg-primary'
+                                  : 'bg-danger'
                               } ${classes.badgeClass}`}
+                          >
+                            {w.typeOfExperience}
+                          </span>
+                          {w.currentlyWorking && (
+                            <span
+                              className={`badge text-bg-dark rounded-pill bg-success ${classes.badgeClass}`}
                             >
-                              {w.typeOfExperience}
+                              Currently Working
                             </span>
-                            {w.currentlyWorking && (
-                              <span
-                                className={`badge text-bg-dark rounded-pill bg-success ${classes.badgeClass}`}
-                              >
-                                Currently Working
-                              </span>
-                            )}
-                          </div>
-                          <div className="d-flex justify-content-center">
-                            <img
-                              className={`rounded ${classes.img}`}
-                              src={w.organizationLogo}
-                              alt={w.organizationName}
-                            />
-                          </div>
+                          )}
                         </div>
-                      </LeftIn>
+                        <div className="d-flex justify-content-center">
+                          <img
+                            className={`rounded ${classes.img}`}
+                            src={w.organizationLogo}
+                            alt={w.organizationName}
+                          />
+                        </div>
+                      </div>
+                      {/* </LeftIn> */}
                     </div>
 
                     <div className={`${classes.content} col-md-6 `}>
-                      <LeftIn>
-                        <h3 className="mt-1">{w.organizationName}</h3>
-                        <h5 className="mt-1">Designation: {w.designation}</h5>
-                        <span className="mt-1">
-                          Start Date: {w.startDate}{" "}
-                          {!w.currentlyWorking && (
-                            <span>- End Date: {w.endDate}</span>
-                          )}
-                        </span>
+                      {/* <LeftIn> */}
+                      <h3 className="mt-1">{w.organizationName}</h3>
+                      <h5 className="mt-1">Designation: {w.designation}</h5>
+                      <span className="mt-1">
+                        Start Date: {w.startDate}{" "}
                         {!w.currentlyWorking && (
-                          <p className="mt-1">
-                            Duration: {w.durationMonths} Months
-                          </p>
+                          <span>- End Date: {w.endDate}</span>
                         )}
-                        <div className="d-flex justify-content-start flex-column">
-                          {w.description.map((desc, index) => {
-                            return (
-                              <p
-                                key={index}
-                                className={` ${
-                                  desc.includes("Tech Used") ? classes.bold : ""
+                      </span>
+                      {!w.currentlyWorking && (
+                        <p className="mt-1">
+                          Duration: {w.durationMonths} Months
+                        </p>
+                      )}
+                      <div className="d-flex justify-content-start flex-column">
+                        {w.description.map((desc, index) => {
+                          return (
+                            <p
+                              key={index}
+                              className={` ${desc.includes("Tech Used") ? classes.bold : ""
                                 }`}
-                                style={{textAlign:'left'}}
-                              >
-                                {!desc.includes("Tech Used") && <b>{index + 1} . </b>}
-                                {desc}
-                              </p>
-                            );
-                          })}
-                        </div>
-                      </LeftIn>
+                              style={{ textAlign: 'left' }}
+                            >
+                              {!desc.includes("Tech Used") && <b>{index + 1} . </b>}
+                              {desc}
+                            </p>
+                          );
+                        })}
+                      </div>
+                      {/* </LeftIn> */}
                     </div>
                   </div>
                 </WorkCard>

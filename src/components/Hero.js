@@ -8,17 +8,21 @@ function Hero() {
   const { darkMode } = useContext(DarkModeContext);
   const color = darkMode ? "white" : "black";
   return (
-    <div className={`text-center `}>
-      <div className={`w-100 ${classes.avatar}`}>
-          <img className={classes.img} src={avatar} alt="profile_photo" fetchpriority='high'/>
-      </div>
+    <div className="d-flex flex-column flex-md-row justify-content-center align-items-center">
+      <div className={`d-flex flex-column flex-md-row justify-content-center align-items-center gap-md-5 gap-3 my-5 pt-3 ${classes.hero}`}>
+        <div className={`${classes.avatar}`}>
+          <img className={classes.img} src={avatar} alt="profile_photo" fetchpriority='high' />
+        </div>
 
-      <div>
-        <div className=" text-center p-3 m-2 w-100" style={{ color: color }}>
-          <h1>Hello, There! </h1>
-          <h1 className="m-2 p-3 w-100 " id="app">
-            I'm Saurabh Sharma
-          </h1>
+        <div className="text-center text-md-start">
+          <div style={{ color: color }}>
+            <h1 className="fw-bold">Hello, There!</h1>
+            <h1 className="fw-bold" id="app">
+              I'm Saurabh Sharma
+            </h1>
+            <h2> Full Stack Developer</h2>
+            <h4>Working @Xpertdox</h4>
+          </div>
         </div>
       </div>
     </div>

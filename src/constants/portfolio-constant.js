@@ -1,15 +1,28 @@
 import belzabarLogo from "../image/belzabarLogo.png";
 import readyCodeLogo from "../image/readyCoderLogo.png";
 import truvanta from "../image/truvanta.jpeg";
+import xpertdox from "../image/xpertdox.jfif"
 
 export const ExperienceType = {
   INTERN: "Trainee",
   FULL_TIME: "Full Time",
-  CONTRACT :"Contract"
+  CONTRACT: "Contract"
 };
 
 export const WorkExperiences = [
-   {
+  {
+    organizationName: "Xpertdox India Private Limited",
+    organizationLogo: xpertdox,
+    startDate: "Feb 2026",
+    currentlyWorking: true,
+    typeOfExperience: ExperienceType.FULL_TIME,
+    designation: "Software Developer",
+    description: [
+      "Working on company's product",
+      "Tech Used: ReactJS, NodeJS, ExpressJS, MongoDB"
+    ]
+  },
+  {
     organizationName: "Truvanta Inc",
     organizationLogo: truvanta,
     startDate: "Aug 2025",
