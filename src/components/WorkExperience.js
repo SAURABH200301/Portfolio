@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./UI/Card";
 import classes from "./WorkExperience.module.css";
 import WorkCard from "./UI/WorkCard";
-import LeftIn from "../Animation/LeftIn";
+// import LeftIn from "../Animation/LeftIn";
 import { WorkExperiences, ExperienceType } from "../constants/portfolio-constant";
 
 export default function WorkExperience() {
@@ -26,10 +26,10 @@ export default function WorkExperience() {
                         <div className="d-flex justify-content-start">
                           <span
                             className={`badge text-bg-dark rounded-pill mx-1 ${w.typeOfExperience === ExperienceType.FULL_TIME
-                                ? 'bg-success'
-                                : w.typeOfExperience === ExperienceType.CONTRACT
-                                  ? 'bg-primary'
-                                  : 'bg-danger'
+                              ? 'bg-success'
+                              : w.typeOfExperience === ExperienceType.CONTRACT
+                                ? 'bg-primary'
+                                : 'bg-danger'
                               } ${classes.badgeClass}`}
                           >
                             {w.typeOfExperience}
