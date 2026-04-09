@@ -3,7 +3,7 @@ import { BsLinkedin, BsGithub, BsFacebook } from 'react-icons/bs'
 import { GrInstagram, GrTwitter } from 'react-icons/gr'
 import Card from './UI/Card'
 import classes from './SocialMedia.module.css'
-import Zoom from '../Animation/Zoom'
+// import Zoom from '../Animation/Zoom'
 function SocialMedia() {
     return (
         <div className={`d-flex justify-content-around ${classes.social} w-100 `}>

@@ -5,7 +5,7 @@ import mail from '../image/mail.png'
 import linkedin from '../image/linkedin.png'
 import insta from '../image/insta.png'
 import twitter from '../image/twitter.png'
-import LeftIn from '../Animation/LeftIn.js'
+// import LeftIn from '../Animation/LeftIn.js'
 
 const contacts = [
     {

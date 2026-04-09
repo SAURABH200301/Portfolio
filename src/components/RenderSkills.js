@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './UI/Card'
 import classes from './RenderSkills.module.css'
-import Zoom from '../Animation/Zoom'
+// import Zoom from '../Animation/Zoom'
 
 function RenderSkills(props) {
 

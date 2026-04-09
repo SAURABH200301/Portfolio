@@ -19,7 +19,7 @@ import html from "../image/html.png";
 import css from "../image/css.png";
 import js from "../image/js.png";
 import link from "../image/link.png";
-import LeftIn from "../Animation/LeftIn";
+// import LeftIn from "../Animation/LeftIn";
 import bootstrap from "../image/BS.png";
 import typescript from "../image/typescript.png";
 import axios from "../image/axios.png";
