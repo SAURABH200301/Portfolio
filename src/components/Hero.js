@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import avatar from "../image/avatar2.png";
+import avatarWebp from "../image/avatar2.webp";
+import avatarPng from "../image/avatar2.png";
 import classes from "./Hero.module.css";
 import { DarkModeContext } from "./context/DarkModeContext";
 import { Link } from "react-scroll";
@@ -12,7 +13,10 @@ function Hero() {
     <div id="home" className="d-flex flex-column flex-md-row justify-content-center align-items-center">
       <div className={`d-flex flex-column flex-md-row justify-content-center align-items-center gap-md-5 gap-3 my-5 pt-3 ${classes.hero}`}>
         <div className={`${classes.avatar}`}>
-          <img className={classes.img} src={avatar} alt="profile_photo" fetchpriority='high' />
+          <picture>
+            <source srcSet={avatarWebp} type="image/webp" />
+            <img className={classes.img} src={avatarPng} alt="profile_photo" width="400" height="500" fetchpriority='high' />
+          </picture>
         </div>
 
         <div className="text-center text-md-start">
