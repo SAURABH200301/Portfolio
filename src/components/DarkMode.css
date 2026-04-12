@@ -1,20 +1,52 @@
-:root{
+:root {
     --color-dark: #21213f;
     --color-light: #ffffff;
 }
-body{
-    /* background: linear-gradient(45deg,#FF3131,#0096FF,#FFDB58); */
+
+body {
+    position: relative;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-position: center;
+    background-attachment: fixed;
+    transition: opacity 0.3s ease-in-out;
+    will-change: opacity;
+}
+
+/* Light Mode Background */
+body::before {
     background-image: url('../image/bg7.jpg');
-    transition: 0.3s;
+    opacity: 1;
 }
-body.dark{
-    background: rgba(55, 65, 76, 0.472); 
-    background-image: url('../image/bg3.jpg');
+
+/* Dark Mode Background */
+body::after {
+    background-image: linear-gradient(rgba(55, 65, 76, 0.472), rgba(55, 65, 76, 0.472)), url('../image/bg3.jpg');
+    opacity: 0;
 }
-input{
+
+body.dark::before {
+    opacity: 0;
+}
+
+body.dark::after {
+    opacity: 1;
+}
+
+input {
     display: none;
 }
-.switch{
+
+.switch {
     overflow: hidden;
     display: flex;
     width: 60px;
@@ -24,41 +56,49 @@ input{
     background-color: var(--color-dark);
     cursor: pointer;
 }
-.handle{
+
+.handle {
     position: relative;
     width: 24px;
     height: 24px;
     transition: 0.3s;
 }
+
 .handle::before,
-.handle::after{
-    content:"";
+.handle::after {
+    content: "";
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     display: block;
     width: 24px;
     height: 24px;
     border-radius: 50%;
 }
-.handle::before{
+
+.handle::before {
     background: var(--color-light);
 }
-.handle::after{
+
+.handle::after {
     background: var(--color-light);
     opacity: 0;
-    translate:  -7px -7px;
+    translate: -7px -7px;
 }
-body.dark .switch{
+
+body.dark .switch {
     background: var(--color-light);
-    
+
 }
-body.dark .handle{
+
+body.dark .handle {
     translate: 30px 0;
 }
-body.dark .handle::after{
+
+body.dark .handle::after {
     opacity: 1;
 }
-body.dark .handle::before{
+
+body.dark .handle::before {
     background: var(--color-dark);
 }

@@ -19,14 +19,29 @@ import html from "../image/html.png";
 import css from "../image/css.png";
 import js from "../image/js.png";
 import link from "../image/link.png";
-// import LeftIn from "../Animation/LeftIn";
 import bootstrap from "../image/BS.png";
 import typescript from "../image/typescript.png";
 import axios from "../image/axios.png";
 import tailwind from "../image/tailwind.svg";
 import theme from "../image/theme.webm";
+import rfp from "../image/rfp.png"
+import redux from "../image/redux.png";
+import postgres from "../image/postgre.png";
+import redis from "../image/Redis.png";
+import sequelize from "../image/Sequelize.png";
+import openai from "../image/openai.svg";
+import github from "../image/github.png"
 
 const work = [
+  {
+    src: rfp,
+    head: "RFP_CONNECT",
+    desc: "An intelligent Request for Proposal (RFP) platform that connects buyers with vendors using AI-powered matching and automated workflows.",
+    techUsed: [react, typescript, express, node, tailwind, postgres, redis, redux, sequelize, openai],
+    LiveLink: "https://rfp-connect.vercel.app/",
+    isLive: true,
+    GithubLink: "https://github.com/SAURABH200301/RFP_CONNECT",
+  },
   {
     src: chatapp,
     head: "Join- A chatting app",
@@ -132,7 +147,7 @@ function Work() {
                         })}
                       </div>
                       <h5>Links</h5>
-                      <div className="d-flex justify-content-center ">
+                      <div className="d-flex justify-content-center items-center">
                         {w.isLive && (
                           <a href={w.LiveLink}>
                             <img
@@ -142,13 +157,10 @@ function Work() {
                             />
                           </a>
                         )}
-                        <a href={w.GithubLink} className="mt-2 pt-4 ">
-                          <BsGithub
-                            style={{ fontSize: "6vh", color: "black" }}
-                          />
+                        <a href={w.GithubLink}>
+                          <img src={github} alt="github" className={classes.icon} />
                         </a>
                       </div>
-                      {/* </LeftIn> */}
                     </div>
                   </div>
                 </WorkCard>

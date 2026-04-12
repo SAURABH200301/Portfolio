@@ -1,16 +1,18 @@
-import { useContext,useState,useEffect } from 'react';
+import { useContext, useState, useEffect, Suspense, lazy } from 'react';
 import classes from './App.module.css';
-import About from './components/About';
 import Appbar from './components/Appbar';
 import ButtonToTop from './components/ButtonToTop';
-import Contact from './components/Contact';
 import DarkModeToggle from './components/DarkModeToggle';
-import Hero from './components/Hero';
 import Resume from './components/Resume';
-import Skills from './components/Skills';
-import Work from './components/Work';
+import avatar from "../src/image/avatar2.png";
 import { DarkModeContext } from './components/context/DarkModeContext';
-import WorkExperience from './components/WorkExperience';
+
+const About = lazy(() => import('./components/About'));
+const Contact = lazy(() => import('./components/Contact'));
+const Hero = lazy(() => import('./components/Hero'));
+const Skills = lazy(() => import('./components/Skills'));
+const Work = lazy(() => import('./components/Work'));
+const WorkExperience = lazy(() => import('./components/WorkExperience'));
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -33,15 +35,20 @@ function App() {
     };
   }, []);
   return (
-    <div id='home'>
+    <div>
       <Appbar />
       <div>
-        <Hero />
-        <About />
-        <Skills />
-        <WorkExperience/>
-        <Work />
-        <Contact />
+        <Suspense fallback={<div className="text-center p-5" style={{ color: color }}>
+          <img src={avatar} style={{ maxHeight: "40vh" }} alt="profile_photo" fetchpriority='high' />
+          <h2>Hang tight, I'm almost there! 🚀</h2>
+        </div>}>
+          <Hero />
+          <About />
+          <Skills />
+          <WorkExperience />
+          <Work />
+          <Contact />
+        </Suspense>
       </div>
       <div><Resume /></div>
       <div className={classes.button}><DarkModeToggle /></div>
